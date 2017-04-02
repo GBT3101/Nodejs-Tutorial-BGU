@@ -45,5 +45,17 @@ The deck is an array of cards:
 
 1. `get /drawCard`
 
+This query will send back the client a card.
 
+hint: `res.send(___)` will send back to the client, for example: `res.send({strength: 1, color: 1})` will send the client an ace of spades.
+
+hint: `deck[currentDeckIndex]` is the next card in the deck.
+
+2. `post /postWinner`
+
+This query receives a json object: `{winner: string}` which is `req.body`, for example: if you've received `{winner: "dealer"}`it means that the match has ended and the dealer won.
+
+You should post this object to a DataBase.
+
+hint: `req.body.winner` will get you the string, if `{winner: "player"}` => `req.body.winner == "player"`
 
