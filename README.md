@@ -47,9 +47,9 @@ The deck is an array of cards:
 
 This query will send back the client a card.
 
-hint: `res.send(___)` will send back to the client, for example: `res.send({strength: 1, color: 1})` will send the client an ace of spades.
+**hint**: `res.send(___)` will send back to the client, for example: `res.send({strength: 1, color: 1})` will send the client an ace of spades.
 
-hint: `deck[currentDeckIndex]` is the next card in the deck.
+**hint**: `deck[currentDeckIndex]` is the next card in the deck.
 
 2. `post /postWinner`
 
@@ -57,5 +57,15 @@ This query receives a json object: `{winner: string}` which is `req.body`, for e
 
 You should post this object to a DataBase.
 
-hint: `req.body.winner` will get you the string, if `{winner: "player"}` => `req.body.winner == "player"`
+**hint**: `req.body.winner` will get you the string, if `{winner: "player"}` => `req.body.winner == "player"`
 
+3. `put /insertCard`
+
+This is the best query, because it's your way to ensure you always win against the dealer, **this time you can't use the FrontEnd app to use it** since it's not implemented there, **you should do it yourself**.
+
+**hint**: remember that `deck[currentDeckIndex]` is the next card in the deck, you can change that. for example:
+`deck[currentDeckIndex] = {strength: 10, color: 0}` will insert Jack of clubs as the next card in deck.
+
+**hint**: Use `PostMan` to send the card. read more about `PostMan` here: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
+
+**hint**: use `Hit Me` in the Web Application to see if you actually inserted the right card.
