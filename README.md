@@ -69,3 +69,5 @@ This is the best query, because it's your way to ensure you always win against t
 **hint**: Use `PostMan` to send the card. read more about `PostMan` here: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
 
 **hint**: use `Hit Me` in the Web Application to see if you actually inserted the right card.
+
+# Good Luck!
