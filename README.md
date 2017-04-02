@@ -25,3 +25,15 @@ cd Nodejs-Tutorial-BGU
 ```sh
 node server.js
 ```
+If you see "I am listening" on your cmd, you are doing fine, the server is up.
+
+3. Let's make sure our server is ready, enter `localhost:3100` with any browser, do you see the message `This is the blackjack server, what do you want?`? Awesome, everything works just fine and you are ready to program the API.
+
+# Deck Utils
+
+If you have sharp eyes, you might have noticed `deckUtils.js` file, **No need to touch this code**, this is an exported JavaScript file that being imported into `server.js`, check out the code and see how it's being used, it's very straightforward.
+
+# Implementing the API
+
+1. get /drawCard
+
