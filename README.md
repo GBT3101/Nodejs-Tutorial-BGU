@@ -17,7 +17,7 @@ Install node (& npm) - https://nodejs.org/en/download/
 1. First, open your command line and clone / download this project to your pc:
 
 ```sh
-git clone git@github.com:GBT3101/Nodejs-Tutorial-BGU.git
+git clone https://github.com/GBT3101/Nodejs-Tutorial-BGU.git
 cd Nodejs-Tutorial-BGU
 ```
 2. We want you to focus on NodeJS, so everything else is already set up (node modules, etc), just run this line to run the server.
