@@ -21,10 +21,12 @@ The colors are: 0 - club, 1 - leaf, 2 - diamond, 3 - heart.
 var deck = deckUtils.shuffleDeck(deckUtils.generateDeck()); 
 
 app.listen(3100); // server is open and listening on port 3100, to access: localhost:3100 in any browser.
-console.log('I am listening');
+console.log('I am listening on localhost:3100');
 
 app.get('/', function (req, res) {
-  res.send('This is the blackjack server, what do you want?');
+
+  // TODO - Send back 'hello world'
+  // 
 });
 
 app.get('/drawCard', function (req, res) {
@@ -37,6 +39,7 @@ app.get('/drawCard', function (req, res) {
     console.log('deck emptied, initalizing deck');
     initializeDeck();
   }
+
 });
 
 app.post('/postWinner', function (req, res) { // Request body: {winner: string}
